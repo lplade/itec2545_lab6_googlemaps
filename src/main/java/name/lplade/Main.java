@@ -22,7 +22,7 @@ public class Main {
     public static void main(String[] args) throws Exception{
         String key = null;
         //Read key from file
-        try (BufferedReader reader = new BufferedReader(new FileReader("elevation_key"))){
+        try (BufferedReader reader = new BufferedReader(new FileReader("API_KEY"))){
             key = reader.readLine();
             //System.out.println(key); //just checking...
         } catch (Exception ioe) {
