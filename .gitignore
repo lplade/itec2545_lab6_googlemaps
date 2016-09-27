@@ -1,5 +1,7 @@
 #Secret Google Maps Elevation API key
 APIKEY
+.idea
+*.iml
 # Created by .ignore support plugin (hsz.mobi)
 *.class
 .mtj.tmp/
@@ -11,6 +13,7 @@ hs_err_pid*
 .fuse_hidden*
 .directory
 .Trash-*
+
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/dictionaries
