@@ -1,5 +1,6 @@
 #Secret Google Maps Elevation API key
-APIKEY
+elevation_key
+geocoding_key
 .idea
 *.iml
 # Created by .ignore support plugin (hsz.mobi)
