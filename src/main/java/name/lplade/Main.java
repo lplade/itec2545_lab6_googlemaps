@@ -24,7 +24,7 @@ public class Main {
         //Read key from file
         try (BufferedReader reader = new BufferedReader(new FileReader("elevation_key"))){
             key = reader.readLine();
-            System.out.println(key); //just checking...
+            //System.out.println(key); //just checking...
         } catch (Exception ioe) {
             System.out.println("No key file found, or could not read key. Please verify elevation_key is present");
             System.exit(-1); //quit program, need to fix before continuing
@@ -54,7 +54,7 @@ public class Main {
         if (results.length >= 1) {
             System.out.println("I found the following locations:");
 
-            int resultsToDisplay = 0;
+            int resultsToDisplay;
             if (results.length > 5) {
                 resultsToDisplay = 5;
             } else {
