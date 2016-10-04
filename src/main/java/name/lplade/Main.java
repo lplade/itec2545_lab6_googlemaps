@@ -3,7 +3,7 @@ package name.lplade;
 import com.google.maps.ElevationApi;
 import com.google.maps.GeoApiContext;
 import com.google.maps.GeocodingApi;
-import com.google.maps.GeocodingApiRequest;
+//import com.google.maps.GeocodingApiRequest;
 import com.google.maps.model.ElevationResult;
 import com.google.maps.model.GeocodingResult;
 import com.google.maps.model.LatLng;
@@ -13,12 +13,12 @@ import java.io.FileReader;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static com.google.maps.GeocodingApi.geocode;
+//import static com.google.maps.GeocodingApi.geocode;
 
 public class Main {
 
-    static Scanner stringScanner = new Scanner(System.in);
-    static Scanner numberScanner = new Scanner(System.in);
+    private static Scanner stringScanner = new Scanner(System.in);
+    private static Scanner numberScanner = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
         String key = null;
@@ -33,19 +33,6 @@ public class Main {
 
 
         GeoApiContext context = new GeoApiContext().setApiKey(key);
-
-/*        LatLng mctcLatLng = new LatLng(44.97074, -93.283356);
-
-        ElevationResult[] results = ElevationApi.getByPoints(context, mctcLatLng).await();
-
-        if (results.length >=1) {
-            //Get first ElevationResult object
-            ElevationResult mctcElevation = results[0];
-            System.out.println("The elevation of MCTC above sea level is " + mctcElevation.elevation + " meters");
-            //Let's do some rounding
-            System.out.printf("The elevation of MCTC above sea level is %.2f meters.\n", mctcElevation.elevation);
-
-        }*/
 
         //initialize array which is populated inside while loop
         GeocodingResult[] results;
